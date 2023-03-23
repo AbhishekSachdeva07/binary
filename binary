@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int a,c=0,d=0;
+    scanf("%d",&a);
+    while (a>0){
+        c=a%10;
+        if (c==0 || c==1){
+            d=0;
+        }
+        else{
+            d=1;
+            break;
+        }
+        a=a/10;
+    }
+    if (d==0){
+        printf("Binary");
+    }
+    else{
+        printf("Not binary");
+    }
+
+    return 0;
+}
